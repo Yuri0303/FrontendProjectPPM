@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+}
+header {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.upper-header {
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #7f8589;
+}
+.toggle-menu-nav {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+.toggle-menu-button {
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    color: black;
+    background-color: transparent;
+    border: none;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.toggle-menu-button:hover {
+    color: gray;
+}
+
+.center-menu-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.center-menu-nav a {
+    text-decoration: none;
+    color: black;
+}
+.user-menu-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.subscribe-button {
+    background-color: #a83946;
+    border: none;
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    border-radius: 2px;
+    color: white;
+}
+.subscribe-button:hover {
+    background-color: black;
+}
+.user-menu-nav a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    align-items: center;
+    gap: 0.5rem;
+}
+.vertical-divider {
+    display: flex;
+    height: 12px;
+    width: 1px;
+    background-color: lightgray;
+}
