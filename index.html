@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>FrontendProjectPPM</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="styles/header-style.css">
+    <link rel="stylesheet" href="styles/main-style.css">
+    <link rel="stylesheet" href="styles/utility.css">
 </head>
 <body>
-<header>
+<header id="header">
     <div class="upper-header">
         <nav class="toggle-menu-nav">
             <button class="toggle-menu-button">
@@ -40,8 +42,263 @@
                 <p class="header-subscription-subtitle">Lorem ipsum dolor sit amet, consectetur orci aliquam.</p>
             </div>
             <button class="subscribe-button">Abbonati</button>
+            <p class="header-subscription-director">Lorem ipsum dolor est.</p>
+        </div>
+        <div class="header-logo">
+            <a href="">
+                <img src="./images/logo.svg" alt="logo">
+            </a>
+        </div>
+        <div class="header-info">
+            <time class="header-info-text">Lorem ipsum dolor ac.</time>
+            <div class="header-info-text">Lorem ipsum dolor sit cras.</div>
         </div>
     </div>
+    <div class="bottom-header">
+        <nav class="theme-nav">
+            <span>Temi</span>
+            <div class="vertical-divider"></div>
+            <div class="themes">
+                <a href="">Lorem ipsum.</a>
+                <div class="vertical-divider"></div>
+                <a href="">Lorem ipsum.</a>
+                <div class="vertical-divider"></div>
+                <a href="">Lorem ipsum dolor.</a>
+                <div class="vertical-divider"></div>
+                <a href="">Lorem ipsum dolor.</a>
+                <div class="vertical-divider"></div>
+                <a href="">Lorem ipsum dolor.</a>
+            </div>
+        </nav>
+    </div>
 </header>
+<main id="main">
+    <div class="ads-div"></div>
+    <div class="main-content">
+        <section class="section">
+            <header class="section-header">
+                <div class="section-header-div">
+                    <h1 class="category-title">Economia</h1>
+                    <div class="live-news">
+                        <div class="circle"></div>
+                        <span>Live</span>
+                    </div>
+                </div>
+            </header>
+            <div class="section-content">
+                <div class="column">
+                    <div class="main-article">
+                        <header class="main-article-header">
+                            <h1 class="main-article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit metus, convallis ut ante vitae.</h1>
+                            <div class="article-info main-article-info">
+                                <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="section-main-article">
+                            <div class="main-article-image">
+                                <img src="./images/news-images/first-main-article.jpg" alt="featured-image">
+                            </div>
+                            <div class="main-article-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit metus, convallis ut ante vitae, facilisis efficitur ligula. Sed ac ligula nec enim facilisis bibendum.</p>
+                                <a href="">Leggi articolo >></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="other-articles">
+                        <div class="other-articles-header">
+                            <div class="news-info">
+                                <time>15 Apr 2025</time>
+                                <a href="">Economia</a>
+                            </div>
+                            <div class="other-articles-content">
+                                <h2 class="other-articles-title">
+                                    <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id sodales sem. Nulla porta non urna finibus aliquet. Aenean facilisis.</a>
+                                </h2>
+                                <div class="article-info">
+                                    <div class="article-writer">Di <a href="">Chiara Brusini</a></div>
+                                    <div class="article-action">
+                                        <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                        <div class="vertical-divider"></div>
+                                        <div class="comments">
+                                            <a href="">
+                                                <img src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                                <span>(0)</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vertical-divider"></div>
+                        <div class="other-articles-header">
+                            <div class="news-info">
+                                <time>15 Apr 2025</time>
+                                <a href="">Economia</a>
+                            </div>
+                            <div class="other-articles-content">
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Aliquam a commodo augue. Maecenas hendrerit accumsan massa, non efficitur dolor consequat id. Donec tincidunt luctus malesuada.</a>
+                                    </h2>
+                                    <img src="images/news-images/first-article.jpg" alt="featured-image">
+                                </div>
+                                <div class="article-info">
+                                    <div class="article-writer">Di <a href="">Chiara Brusini</a></div>
+                                    <div class="article-action">
+                                        <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                        <div class="vertical-divider"></div>
+                                        <div class="comments">
+                                            <a href="">
+                                                <img src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                                <span>(37)</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <header class="section-header">
+                <div class="section-header-div">
+                    <h1 class="category-title">Le notizie del giorno</h1>
+                </div>
+            </header>
+            <div class="section-content">
+                <div class="column">
+                    <div class="main-article">
+                        <header class="main-article-header">
+                            <h1 class="main-article-title with-sidebar">Donec pharetra volutpat libero, vel sagittis lacus. Aliquam ac tempor ex, viverra viverra nulla. Proin vitae.</h1>
+                            <div class="article-info main-article-info">
+                                <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="section-main-article">
+                            <div class="main-article-image">
+                                <img src="/images/news-images/second-main-article.jpg" alt="featured-image">
+                            </div>
+                            <div class="main-article-text">
+                                <p>Praesent placerat, purus vel scelerisque finibus, neque libero congue nisi, in sodales velit lorem sed arcu. Integer condimentum et quam eget pharetra. Mauris bibendum malesuada est vel cursus.</p>
+                                <a href="">Leggi articolo >></a>
+                                <!-- TODO: da inserire FOCUS e altro -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="other-articles">
+                        <div class="other-articles-header">
+                            <div class="news-info">
+                                <time>14 Apr 2025</time>
+                                <a href="">Politica</a>
+                            </div>
+                            <div class="other-articles-content">
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Ut vitae magna eu massa tristique condimentum. Phasellus aliquam massa.</a>
+                                    </h2>
+                                </div>
+                                <div class="article-info">
+                                    <div class="article-writer">Di <a href="">Franz Baraggino</a></div>
+                                    <div class="article-action">
+                                        <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                        <div class="vertical-divider"></div>
+                                        <div class="comments">
+                                            <a href="">
+                                                <img src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                                <span>(29)</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vertical-divider"></div>
+                        <div class="other-articles-header">
+                            <div class="news-info">
+                                <time>14 Apr 2025</time>
+                                <a href="">Tecnologia</a>
+                            </div>
+                            <div class="other-articles-content">
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Integer suscipit, nulla vitae dapibus sagittis, nisi purus maximus metus, non mollis orci urna.</a>
+                                    </h2>
+                                </div>
+                                <div class="article-info">
+                                    <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                    <div class="article-action">
+                                        <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                        <div class="vertical-divider"></div>
+                                        <div class="comments">
+                                            <a href="">
+                                                <img src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                                <span>(14)</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-divider"></div>
+                <div class="column">
+                    <div class="other-articles">
+                        <div class="other-articles-header">
+                            <img src="images/news-images/second-article.jpg" alt="featured-image">
+                            <div class="news-info">
+                                <time>15 Apr 2025</time>
+                            </div>
+                            <div class="other-articles-content">
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Pellentesque felis dolor, dictum ut nulla quis, lacinia lacinia urna.</a>
+                                    </h2>
+                                </div>
+                                <div class="article-info">
+                                    <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                    <div class="article-action">
+                                        <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                        <div class="vertical-divider"></div>
+                                        <div class="comments">
+                                            <a href="">
+                                                <img src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                                <span>(34)</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
 </body>
 </html>

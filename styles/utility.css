@@ -1,0 +1,20 @@
+.vertical-divider {
+    display: flex;
+    height: auto;
+    min-height: 12px;
+    width: 1px;
+    background-color: #e5ebef;
+}
+.horizontal-divider {
+    height: 1px;
+    width: 100%;
+    min-width: 12px;
+    background-color: #7f8589;
+}
+.ads-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
