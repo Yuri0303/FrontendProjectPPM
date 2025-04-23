@@ -81,6 +81,7 @@ body {
 }
 .subscribe-button:hover {
     background-color: black;
+    cursor: pointer;
 }
 .user-menu-nav a {
     display: flex;

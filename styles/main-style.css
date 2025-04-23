@@ -91,11 +91,17 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    gap: 1rem;
 }
 .main-article-title {
     font-size: 2.625rem;
+    margin: 0;
 }
-.with-sidebar {
+.main-article-title a {
+    text-decoration: none;
+    color: #262424;
+}
+.more-columns {
     font-size: 2.25rem;
 }
 .article-info {
@@ -203,4 +209,20 @@
 }
 .other-articles-title a {
     color: #262424;
+}
+.related-articles p {
+    margin: 1em 0 1em 0;
+}
+.related-articles a {
+    color: #262424;
+}
+.related-articles strong {
+    text-transform: uppercase;
+    color: #8c0404;
+}
+.red-text {
+    color: #8c0404;
+}
+.red-text a {
+    color: inherit;
 }
