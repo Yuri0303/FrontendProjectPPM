@@ -84,14 +84,27 @@
     flex-direction: column;
     gap: 1rem;
 }
-.main-article {
-    padding-bottom: 1rem;
+.side-articles {
+    flex: 1 0 250px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+time {
+    font-family: 'Rubik', sans-serif;
+    color: #5a5a5a;
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 .main-article-header {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 1rem;
+    flex: 1 0 40%;
 }
 .main-article-title {
     font-size: 2.625rem;
@@ -117,6 +130,9 @@
 }
 .main-article-info {
     width: 60%
+}
+.main-article-info-row {
+    width: 100%;
 }
 .article-writer {
     text-transform: uppercase;
@@ -147,13 +163,16 @@
     font-weight: 500;
     color: #262424;
 }
-.section-main-article {
+.main-article-content {
     display: flex;
     gap: 1rem;
     justify-content: center;
     align-items: flex-start;
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+.main-article.row .main-article-content {
+    padding: 0;
 }
 .main-article-text {
     display: flex;
@@ -162,6 +181,7 @@
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     color: #5a5a5a;
+    width: 40%;
 }
 .main-article-text p {
     margin: 0;
@@ -171,6 +191,10 @@
     color: #a83946;
     font-size: 14px;
 }
+.image-container {
+    display: flex;
+    flex-shrink: 0;
+}
 .other-articles {
     display: flex;
     flex-direction: row;
@@ -178,11 +202,20 @@
     justify-content: space-between;
     padding-bottom: 1rem;
 }
+.other-articles-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 1 0;
+}
 .other-articles-header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 0.5rem;
 }
 .other-articles-header a {
     text-decoration: none;
@@ -193,6 +226,8 @@
     text-transform: uppercase;
     font-size: 12px;
     font-family: 'Rubik', sans-serif;
+    height: 2rem;
+    align-items: center;
 }
 .news-info a {
     color: #5a5a5a;
@@ -220,9 +255,33 @@
     text-transform: uppercase;
     color: #8c0404;
 }
-.red-text {
-    color: #8c0404;
+.in-edicola {
+    font-family: 'Rubik', sans-serif;
+    background-color: black;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px;
+    white-space: nowrap;
+    padding: 0.25rem;
+    font-size: 12px;
+    width: auto;
+    align-self: flex-start;
 }
-.red-text a {
-    color: inherit;
+.in-edicola:active {
+    text-decoration-color: red;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.comment-icon {
+    width: 18px;
+    height: 15px;
+}
+.small-image {
+    width: 90px;
+    height: 90px;
 }

@@ -21,4 +21,13 @@
     align-items: center;
     height: 300px;
 }
-
+.red-text {
+    font-family: Rubik, sans-serif;
+    color: #8c0404;
+}
+.red-text a {
+    color: inherit;
+}
+.in-other-articles-title {
+    font-size: 14px;
+}
