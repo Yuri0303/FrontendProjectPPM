@@ -8,6 +8,9 @@
     background-color: #e5ebef;
     flex-shrink: 0;
 }
+.vertical-divider.in-article-action {
+    background-color: #7f8589;
+}
 .horizontal-divider {
     height: 1px;
     width: 100%;
@@ -25,7 +28,8 @@
     align-items: center;
     height: 300px;
 }
-.red-text {
+.red-text,
+.red-text a {
     font-family: 'EB Garamond', serif;
     color: #8c0404;
 }

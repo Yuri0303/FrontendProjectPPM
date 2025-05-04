@@ -79,6 +79,9 @@
     padding-bottom: 1rem;
     justify-content: center;
 }
+.video-section .section-content {
+    border-bottom: none;
+}
 .column {
     display: flex;
     flex-direction: column;
@@ -111,15 +114,15 @@ time {
     flex: 1 0 40%;
 }
 .main-article-title {
-    font-size: 2.625rem;
+    font-size: 2.25rem;
     margin: 0;
 }
 .main-article-title a {
     text-decoration: none;
     color: #262424;
 }
-.more-columns {
-    font-size: 2.25rem;
+.main-article-title.without-side-articles {
+    font-size: 2.625rem;
 }
 .article-info {
     display: flex;

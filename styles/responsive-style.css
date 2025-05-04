@@ -15,4 +15,86 @@
     .center-header {
         display: none;
     }
+
+    /*modifiche main*/
+    #main {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .main-article-content {
+        flex-direction: column;
+    }
+    .main-article-text {
+        width: 100%;
+    }
+    .other-articles {
+        flex-direction: column;
+    }
+    .vertical-divider {
+        height: 1px;
+        width: auto;
+        min-height: 0;
+    }
+    .vertical-divider.in-article-action {
+        height: auto;
+        width: 1px;
+        min-height: 12px;
+    }
+    .section-content {
+        flex-direction: column;
+    }
+    .section-content > .vertical-divider,
+    .video-section .other-articles > .vertical-divider,
+    .row > .vertical-divider {
+        display: none;
+    }
+    .side-articles-248px .other-articles-header a,
+    .side-articles-300px .other-articles-header a {
+        width: 100%;
+    }
+    .side-articles-248px .other-articles-header img,
+    .side-articles-300px .other-articles-header img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .main-article.row {
+        flex-direction: column;
+    }
+    .main-article-title,
+    .main-article-title.without-side-articles {
+        font-size: 2rem;
+    }
+    .main-article-info {
+        width: 100%;
+    }
+    .video-section .image-container,
+    .video-section .image-container a {
+        width: 100%;
+    }
+    .video-section .image-container a img:first-of-type {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .digital-newspaper {
+        width: 100%;
+    }
+    .digital-millennium {
+        width: 100%;
+    }
+    .health-section .section-header .image-container {
+        display: none;
+    }
+    /*modifiche footer*/
+    .footer-nav,
+    .footer-nav-list {
+        flex-direction: column;
+    }
+    .footer-nav-list.social-media {
+        flex-direction: row;
+    }
 }
