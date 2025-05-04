@@ -1,0 +1,198 @@
+.close-menu {
+    display: none;
+}
+#toggle-menu:checked ~ .toggle-menu-nav .toggle-menu-button .close-menu {
+    display: inline;
+}
+#toggle-menu:checked ~ .toggle-menu-nav .toggle-menu-button .open-menu {
+    display: none;
+}
+.side-menu-container {
+    display: none;
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+}
+.side-menu {
+    max-width: 468px;
+    width: 90%;
+    background-color: white;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 100%;
+    padding-bottom: 72px;
+}
+.side-menu-header p {
+    margin: 0;
+}
+.side-menu-header {
+    padding: 1rem 1rem 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.side-menu-subscription {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.side-menu-subscription-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: center;
+}
+.side-menu-subscription-title {
+    color: black;
+    font-size: 24px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+}
+.side-menu-subscription-subtitle {
+    font-size: 12px;
+    color: #7f8589;
+}
+.side-menu-subscribe-button:hover {
+    background-color: #e5ebef;
+}
+.side-menu-search {
+    display: flex;
+}
+.side-menu-search input {
+    font-family: 'Rubik', sans-serif;
+    padding: 0.5rem 0 0.5rem 1rem;
+    font-size: 0.75rem;
+    border: 1px solid #7f8589;
+    text-transform: uppercase;
+    border-radius: 2px 0 0 2px;
+    border-right: 0;
+    flex: 1 1 auto;
+}
+.side-menu-search button {
+    background-color: white;
+    border: 1px solid #7f8589;
+    border-radius: 0 2px 2px 0;
+    border-left: 0;
+    padding: 0.5rem 1rem;
+    line-height: 0;
+    flex: 0 0 auto;
+}
+.side-menu-search button:hover {
+    cursor: pointer;
+}
+.side-menu-search:hover input,
+.side-menu-search:hover button {
+    border-color: #a83946;
+}
+.side-menu-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+.side-menu-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    border-bottom: 1px solid #262424;
+}
+.side-menu-list {
+    display: flex;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.side-menu-list li {
+    padding: 0.5rem 1rem;
+    background-color: #f0f2f5;
+    border-radius: 30px;
+    align-self: flex-start;
+}
+.side-menu-list li a {
+    text-decoration: none;
+    color: #262424;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+.side-menu-nav-expand {
+    padding: 0.5rem 1rem;
+}
+.side-menu-nav-expand {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.side-menu-expand-list {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.side-menu-expand-list li {
+    display: flex;
+}
+.with-bottom {
+    padding: 1rem 0;
+    border-bottom: 1px solid #262424;
+}
+.with-submenu {
+    display: flex;
+    justify-content: space-between;
+}
+.with-submenu:hover {
+    cursor: pointer;
+}
+.side-menu-expand-list li a {
+    text-decoration: none;
+    color: #262424;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+}
+#toggle-menu:checked ~ .side-menu-container {
+    display: block;
+}
+.side-menu-footer {
+    background-color: black;
+    color: white;
+}
+.side-menu-footer-nav {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #7f8589;
+}
+.side-menu-footer-list {
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-direction: column;
+}
+.side-menu-footer-list a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.side-menu-footer p {
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+}
+.side-menu-social-list {
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+

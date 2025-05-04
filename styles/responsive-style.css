@@ -1,0 +1,18 @@
+@media screen and (max-width: 768px) {
+    /*modifiche header*/
+    #header {
+        margin: 0;
+        padding: 0;
+    }
+    .upper-header .toggle-menu-nav span,
+    .upper-header .user-menu-nav span,
+    .center-menu-nav {
+        display: none;
+    }
+    .small-logo.hidden {
+        display: inline;
+    }
+    .center-header {
+        display: none;
+    }
+}

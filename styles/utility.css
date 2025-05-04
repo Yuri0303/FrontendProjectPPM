@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 .vertical-divider {
     display: flex;
     height: auto;
     min-height: 12px;
     width: 1px;
     background-color: #e5ebef;
+    flex-shrink: 0;
 }
 .horizontal-divider {
     height: 1px;
     width: 100%;
     min-width: 12px;
     background-color: #7f8589;
+    flex-shrink: 0;
 }
 .in-related-articles {
     width: 30%;
@@ -22,12 +26,79 @@
     height: 300px;
 }
 .red-text {
-    font-family: Rubik, sans-serif;
+    font-family: 'EB Garamond', serif;
     color: #8c0404;
+}
+.main-article-text .red-text {
+    font-family: 'Rubik', sans-serif;
 }
 .red-text a {
     color: inherit;
 }
-.in-other-articles-title {
+.in-articles-text {
     font-size: 14px;
+    font-family: Rubik, sans-serif;
+    text-transform: uppercase;
+}
+.hide-show-button-div {
+    justify-content: flex-end;
+}
+.hide-show-button {
+    display: flex;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    gap: 0.5rem;
+    color: #5a5a5a;
+    background-color: transparent;
+    border: none;
+    padding: 0.75rem;
+    transition: background-color 0.3s;
+}
+.hide-show-button:hover {
+    color: #7f8589;
+    cursor: pointer;
+}
+.section-header.with-img .hide-show-button-div {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.show-text, .show-icon {
+    display: none;
+}
+#hide-show0:checked + .section-header .hide-show-button .show-text,
+#hide-show0:checked + .section-header .hide-show-button .show-icon,
+#hide-show1:checked + .section-header .hide-show-button .show-text,
+#hide-show1:checked + .section-header .hide-show-button .show-icon,
+#hide-show2:checked + .section-header .hide-show-button .show-text,
+#hide-show2:checked + .section-header .hide-show-button .show-icon,
+#hide-show3:checked + .section-header .hide-show-button .show-text,
+#hide-show3:checked + .section-header .hide-show-button .show-icon,
+#hide-show4:checked + .section-header .hide-show-button .show-text,
+#hide-show4:checked + .section-header .hide-show-button .show-icon,
+#hide-show5:checked + .section-header .hide-show-button .show-text,
+#hide-show5:checked + .section-header .hide-show-button .show-icon {
+    display: inline;
+}
+#hide-show0:checked + .section-header .hide-show-button .hide-text,
+#hide-show0:checked + .section-header .hide-show-button .hide-icon,
+#hide-show0:checked ~ .section-content,
+#hide-show1:checked + .section-header .hide-show-button .hide-text,
+#hide-show1:checked + .section-header .hide-show-button .hide-icon,
+#hide-show1:checked ~ .section-content,
+#hide-show2:checked + .section-header .hide-show-button .hide-text,
+#hide-show2:checked + .section-header .hide-show-button .hide-icon,
+#hide-show2:checked ~ .section-content,
+#hide-show3:checked + .section-header .hide-show-button .hide-text,
+#hide-show3:checked + .section-header .hide-show-button .hide-icon,
+#hide-show3:checked ~ .section-content,
+#hide-show4:checked + .section-header .hide-show-button .hide-text,
+#hide-show4:checked + .section-header .hide-show-button .hide-icon,
+#hide-show4:checked ~ .section-content,
+#hide-show5:checked + .section-header .hide-show-button .hide-text,
+#hide-show5:checked + .section-header .hide-show-button .hide-icon,
+#hide-show5:checked ~ .section-content {
+    display: none;
 }

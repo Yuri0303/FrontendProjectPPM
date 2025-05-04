@@ -2,21 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FrontendProjectPPM</title>
     <link rel="stylesheet" href="styles/header-style.css">
-    <link rel="stylesheet" href="styles/main-style.css">
     <link rel="stylesheet" href="styles/utility.css">
+    <link rel="stylesheet" href="styles/main-style.css">
+    <link rel="stylesheet" href="styles/footer-style.css">
+    <link rel="stylesheet" href="styles/side-menu-style.css">
+    <link rel="stylesheet" href="styles/responsive-style.css">
 </head>
 <body>
 <header id="header">
     <div class="upper-header">
+        <input type="checkbox" id="toggle-menu" hidden>
         <nav class="toggle-menu-nav">
-            <button class="toggle-menu-button">
-                <img src="./images/icons/menu-icon.png" alt="menu-icon">
+            <label for="toggle-menu" class="toggle-menu-button">
+                <img class="close-menu" src="images/icons/close-icon.svg" alt="close-icon" style="width: 24px; height: 24px;">
+                <img class="open-menu" src="images/icons/menu-icon.svg" alt="menu-icon" style="width: 24px; height: 24px;">
                 <span>Menu</span>
-            </button>
+            </label>
             <div class="vertical-divider"></div>
         </nav>
+        <div class="small-logo hidden">
+            <a href="">
+                <img src="./images/logo.svg" alt="logo">
+            </a>
+        </div>
         <nav class="center-menu-nav">
             <a href="">In edicola</a>
             <a href="">Blog</a>
@@ -24,16 +35,87 @@
             <a href="">Video</a>
             <a href="">Community</a>
             <a href="">Shop</a>
-            <a href="">Il mondo FQ</a>
+            <a href="">Il mondo FQ<img src="images/icons/arrow-icon.svg" alt="arrow-icon"></a>
         </nav>
         <nav class="user-menu-nav">
             <button class="subscribe-button">Abbonati</button>
             <div class="vertical-divider"></div>
             <a href="">
-                <img src="./images/icons/user-icon.svg" alt="user-icon">
+                <img src="./images/icons/user-icon.svg" alt="user-icon" style="width: 24px; height: 24px;">
                 <span>Accedi</span>
             </a>
         </nav>
+        <div class="side-menu-container">
+            <div class="side-menu">
+                <header class="side-menu-header">
+                    <div class="side-menu-subscription">
+                        <div class="side-menu-subscription-text">
+                            <p class="side-menu-subscription-title">Lorem ipsum dolor sit posuere<span style="color: #a83946">.</span></p>
+                            <p class="side-menu-subscription-subtitle">Lorem ipsum dolor sit amet, consectetur orci aliquam.</p>
+                        </div>
+                        <button class="subscribe-button" style="width: 100%; padding: 0.75rem">Abbonati</button>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <form class="side-menu-search">
+                        <input type="text" placeholder="Cerca">
+                        <button>
+                            <img src="./images/icons/search-icon.svg" alt="search-icon">
+                        </button>
+                    </form>
+                </header>
+                <div class="horizontal-divider"></div>
+                <nav class="side-menu-nav">
+                    <div class="side-menu-title">Temi del giorno</div>
+                    <ul class="side-menu-list">
+                        <li><a href="">Pellentesque habitant.</a></li>
+                        <li><a href="">Lorem ipsum dolor.</a></li>
+                        <li><a href="">Lorem ipsum.</a></li>
+                        <li><a href="">Lorem ipsum dolor.</a></li>
+                        <li><a href="">Lorem ipsum.</a></li>
+                    </ul>
+                </nav>
+                <div class="horizontal-divider"></div>
+                <nav class="side-menu-nav-expand">
+                    <ul class="side-menu-expand-list">
+                        <li class="with-bottom"><a href="">il Fatto Quotidiano in edicola</a></li>
+                        <li class="with-submenu">Politica<img src="images/icons/right-arrow-icon.svg" alt="right-arrow-icon"></li>
+                        <li class="with-submenu">Cronaca<img src="images/icons/right-arrow-icon.svg" alt="right-arrow-icon"></li>
+                        <li><a href="">Giustizia</a></li>
+                        <li><a href="">Mondo</a></li>
+                        <li class="with-submenu">Economia<img src="images/icons/right-arrow-icon.svg" alt="right-arrow-icon"></li>
+                        <li class="with-submenu">Altre sezioni<img src="images/icons/right-arrow-icon.svg" alt="right-arrow-icon"></li>
+                    </ul>
+                </nav>
+                <div class="horizontal-divider"></div>
+                <nav class="side-menu-nav-expand">
+                    <ul class="side-menu-expand-list">
+                        <li class="with-submenu">FQ Magazine<img src="images/icons/right-arrow-icon.svg" alt="right-arrow-icon"> </li>
+                        <li class="with-submenu">FQ Sport<img src="images/icons/right-arrow-icon.svg" alt="right-arrow-icon"></li>
+                        <li><a href="">FQ Salute</a></li>
+                        <li class="with-submenu">FQ Motori<img src="images/icons/right-arrow-icon.svg" alt="right-arrow-icon"></li>
+                        <li><a href="">FQ Blog</a></li>
+                    </ul>
+                </nav>
+                <footer class="side-menu-footer">
+                    <nav class="side-menu-footer-nav">
+                        <ul class="side-menu-footer-list">
+                            <li><a href="">Millennium</a></li>
+                            <li class="with-link"><a href="">Shop<img src="images/icons/link-icon.svg" alt="link-icon"></a></li>
+                            <li class="with-submenu">Il Mondo del Fatto<img src="images/icons/right-arrow-icon.svg" alt="right-arrow-icon"></li>
+                        </ul>
+                    </nav>
+                    <p>Vestibulum eget ex ante. Curabitur sed dolor.</p>
+                    <ul class="side-menu-social-list">
+                        <li><a href=""><img src="images/icons/social-icon.svg" alt="social-item"></a></li>
+                        <li><a href=""><img src="images/icons/social-icon.svg" alt="social-item"></a></li>
+                        <li><a href=""><img src="images/icons/social-icon.svg" alt="social-item"></a></li>
+                        <li><a href=""><img src="images/icons/social-icon.svg" alt="social-item"></a></li>
+                        <li><a href=""><img src="images/icons/social-icon.svg" alt="social-item"></a></li>
+                        <li><a href=""><img src="images/icons/social-icon.svg" alt="social-item"></a></li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
     </div>
     <div class="center-header">
         <div class="header-subscription">
@@ -75,7 +157,7 @@
 <main id="main">
     <div class="ads-div"></div>
     <div class="main-content">
-        <section>
+        <section class="section">
             <header class="section-header">
                 <div class="section-header-div">
                     <h1 class="category-title">Economia</h1>
@@ -106,7 +188,7 @@
                         </header>
                         <div class="main-article-content">
                             <div class="main-article-image">
-                                <a href=""><img src="./images/news-images/first-main-article.jpg" alt="featured-image"></a>
+                                <a href=""><img src="images/news-images/624x240.jpg" alt="featured-image"></a>
                             </div>
                             <div class="main-article-text">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit metus, convallis ut ante vitae, facilisis efficitur ligula. Sed ac ligula nec enim facilisis bibendum.</p>
@@ -154,7 +236,7 @@
                                         <a href="">Aliquam a commodo augue. Maecenas hendrerit accumsan massa, non efficitur dolor consequat id. Donec tincidunt luctus malesuada.</a>
                                     </h2>
                                     <div class="image-container">
-                                        <a href=""><img class= "small-image" src="images/news-images/first-article.jpg" alt="featured-image"></a>
+                                        <a href=""><img class= "image-90x90" src="images/news-images/90x90.jpg" alt="featured-image"></a>
                                     </div>
                                 </div>
                             </div>
@@ -203,7 +285,7 @@
                         </header>
                         <div class="main-article-content">
                             <div class="main-article-image">
-                                <a href=""><img src="/images/news-images/second-main-article.jpg" alt="featured-image"></a>
+                                <a href=""><img src="/images/news-images/424x318.jpg" alt="featured-image"></a>
                             </div>
                             <div class="main-article-text">
                                 <p>Praesent placerat, purus vel scelerisque finibus, neque libero congue nisi, in sodales velit lorem sed arcu. Integer condimentum et quam eget pharetra. Mauris bibendum malesuada est vel cursus.</p>
@@ -278,11 +360,11 @@
                     </div>
                 </div>
                 <div class="vertical-divider"></div>
-                <div class="column">
+                <div class="column side-articles-300px">
                     <div class="other-articles">
                         <div class="other-articles-content">
                             <div class="other-articles-header">
-                                <a href=""><img src="images/news-images/second-article.jpg" alt="featured-image"></a>
+                                <a href=""><img src="images/news-images/300x225.jpg" alt="featured-image"></a>
                                 <div class="news-info">
                                     <time>15 Apr 2025</time>
                                 </div>
@@ -338,7 +420,7 @@
                         </header>
                         <div class="main-article-content">
                             <div class="main-article-image">
-                                <a href=""><img src="/images/news-images/third-main-article.jpg" alt="featured-image"></a>
+                                <a href=""><img src="/images/news-images/424x318.jpg" alt="featured-image"></a>
                             </div>
                             <div class="main-article-text">
                                 <p><span class="red-text" style="text-transform: uppercase">A Milano - </span>Mauris id diam sed odio finibus volutpat. Nullam sit amet ullamcorper justo. Suspendisse non sagittis tellus. Mauris vestibulum bibendum leo, nec bibendum purus venenatis quis. Integer ac.</p>
@@ -362,7 +444,7 @@
                                 </div>
                                 <div class="other-articles-title">
                                     <h2>
-                                        <a href=""><span class="red-text in-other-articles-title">Eurogate - </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel nisi in lorem tempor condimentum.</a>
+                                        <a href=""><span class="red-text in-articles-text">Eurogate - </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel nisi in lorem tempor condimentum.</a>
                                     </h2>
                                 </div>
                             </div>
@@ -389,7 +471,7 @@
                                 </div>
                                 <div class="other-articles-title">
                                     <h2>
-                                        <a href=""><span class="red-text in-other-articles-title">Tirrenia - </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                                        <a href=""><span class="red-text in-articles-text">Tirrenia - </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
                                     </h2>
                                 </div>
                             </div>
@@ -410,18 +492,18 @@
                     </div>
                 </div>
                 <div class="vertical-divider"></div>
-                <div class="column">
+                <div class="column side-articles-300px">
                     <button class="in-edicola">In Edicola</button>
                     <div class="other-articles">
                         <div class="other-articles-content">
                             <div class="other-articles-header">
-                                <a href=""><img src="images/news-images/third-article.jpg" alt="featured-image"></a>
+                                <a href=""><img src="images/news-images/300x225.jpg" alt="featured-image"></a>
                                 <div class="news-info">
                                     <time>15 Apr 2025</time>
                                 </div>
                                 <div class="other-articles-title">
                                     <h2>
-                                        <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac.</a>
+                                        <a href=""><span class="red-text in-articles-text">Il dossier - </span> ipsum dolor sit amet, consectetur adipiscing elit. Donec ac.</a>
                                     </h2>
                                 </div>
                             </div>
@@ -475,7 +557,7 @@
                         </header>
                         <div class="main-article-content">
                             <div class="main-article-image">
-                                <a href=""><img src="/images/news-images/fourth-main-article.jpg" alt="featured-image"></a>
+                                <a href=""><img src="/images/news-images/424x318.jpg" alt="featured-image"></a>
                             </div>
                         </div>
                     </div>
@@ -537,14 +619,14 @@
                     </div>
                 </div>
                 <div class="vertical-divider"></div>
-                <div class="column side-articles">
+                <div class="column side-articles-300px">
                     <div class="other-articles">
                         <div class="other-articles-content">
                             <div class="other-articles-header">
-                                <a href=""><img src="images/news-images/fourth-article.jpg" alt="featured-image"></a>
+                                <a href=""><img src="images/news-images/300x225.jpg" alt="featured-image"></a>
                                 <div class="other-articles-title">
                                     <h2>
-                                        <a href=""><span class="red-text in-other-articles-title">L'intervista - </span>Praesent ac nibh massa. Nulla tristique ex sollicitudin justo porttitor fermentum. Pellentesque sed varius risus. Phasellus rutrum.</a>
+                                        <a href=""><span class="red-text in-articles-text">L'intervista - </span>Praesent ac nibh massa. Nulla tristique ex sollicitudin justo porttitor fermentum. Pellentesque sed varius risus. Phasellus rutrum.</a>
                                     </h2>
                                 </div>
                             </div>
@@ -566,7 +648,1507 @@
                 </div>
             </div>
         </section>
+        <div class="ads-div"></div>
+        <section class="section">
+            <header class="section-header">
+                <div class="section-header-div">
+                    <h1 class="category-title">In evidenza</h1>
+                </div>
+            </header>
+            <div class="section-content">
+                <div class="other-articles">
+                    <div class="other-articles-content">
+                        <div class="other-articles-header">
+                            <div class="news-info">
+                                <time>15 Apr 2025</time>
+                                <a href="">Economia</a>
+                            </div>
+                            <div class="other-articles-title">
+                                <h2>
+                                    <a href="">Sed commodo at lectus eget faucibus. Phasellus semper, nisl eget scelerisque cursus.</a>
+                                </h2>
+                                <div class="image-container">
+                                    <a href=""><img class= "image-90x90" src="images/news-images/90x90.jpg" alt="featured-image"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-info">
+                            <div class="article-writer">Di <a href="">F. Q.</a></div>
+                            <div class="article-action">
+                                <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                <div class="vertical-divider"></div>
+                                <div class="comments">
+                                    <a href="">
+                                        <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                        <span>(0)</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-divider"></div>
+                    <div class="other-articles-content">
+                        <div class="other-articles-header">
+                            <div class="news-info">
+                                <time>15 Apr 2025</time>
+                                <a href="">Cervelli in fuga</a>
+                            </div>
+                            <div class="other-articles-title">
+                                <h2>
+                                    <a href="">Maecenas vehicula orci at luctus interdum. Interdum et malesuada fames ac ante.</a>
+                                </h2>
+                                <div class="image-container">
+                                    <a href=""><img class= "image-90x90" src="images/news-images/90x90.jpg" alt="featured-image"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-info">
+                            <div class="article-writer">Di <a href="">F. Q.</a></div>
+                            <div class="article-action">
+                                <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                <div class="vertical-divider"></div>
+                                <div class="comments">
+                                    <a href="">
+                                        <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                        <span>(0)</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-divider"></div>
+                    <div class="other-articles-content">
+                        <div class="other-articles-header">
+                            <div class="news-info">
+                                <time>15 Apr 2025</time>
+                                <a href="">Economia</a>
+                            </div>
+                            <div class="other-articles-title">
+                                <h2>
+                                    <a href="">Aenean auctor interdum ultrices. Phasellus malesuada tincidunt tortor venenatis condimentum. Phasellus egestas.</a>
+                                </h2>
+                                <div class="image-container">
+                                    <a href=""><img class= "image-90x90" src="images/news-images/90x90.jpg" alt="featured-image"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-info">
+                            <div class="article-writer">Di <a href="">F. Q.</a></div>
+                            <div class="article-action">
+                                <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                <div class="vertical-divider"></div>
+                                <div class="comments">
+                                    <a href="">
+                                        <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                        <span>(25)</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <header class="section-header">
+                <div class="section-header-div">
+                    <h1 class="category-title">Mondo</h1>
+                </div>
+            </header>
+            <div class="section-content">
+                <div class="column">
+                    <div class="main-article row">
+                        <header class="main-article-header">
+                            <time>15 Aprile 2025</time>
+                            <h1 class="main-article-title"><a href="">Pellentesque ullamcorper lacus justo, sed ullamcorper arcu ullamcorper quis. Etiam auctor metus quis.</a></h1>
+                            <div class="main-article-text" style="width: 100%;">
+                                <p>Pellentesque egestas ornare urna non hendrerit. Pellentesque commodo auctor sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel imperdiet nibh. Cras.</p>
+                                <a href="">Leggi articolo</a>
+                            </div>
+                            <div class="article-info main-article-info-row">
+                                <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(2)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="main-article-content">
+                            <div class="main-article-image">
+                                <a href=""><img src="/images/news-images/400x400.jpg" alt="featured-image"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="other-articles">
+                        <div class="other-articles-content">
+                            <div class="other-articles-header">
+                                <div class="news-info">
+                                    <time>15 Apr 2025</time>
+                                    <a href="">Mondo</a>
+                                </div>
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Proin non leo sit amet ante pellentesque mollis a eu felis. Proin dapibus ornare.</a>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="article-info">
+                                <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vertical-divider"></div>
+                        <div class="other-articles-content">
+                            <div class="other-articles-header">
+                                <div class="news-info">
+                                    <time>15 Apr 2025</time>
+                                    <a href="">Mondo</a>
+                                </div>
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href=""><span class="red-text in-articles-text">Francia - </span>Aliquam erat volutpat. Donec nec ligula ut enim facilisis tincidunt. Donec.</a>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="article-info">
+                                <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-divider"></div>
+                <div class="column side-articles-248px">
+                    <div class="other-articles">
+                        <div class="other-articles-content">
+                            <div class="other-articles-header">
+                                <a href=""><img src="images/news-images/248x186.jpg" alt="featured-image"></a>
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href=""><span class="red-text in-articles-text">L'intervista - </span>Praesent ac nibh massa. Nulla tristique ex sollicitudin justo porttitor fermentum. Pellentesque sed varius risus. Phasellus rutrum.</a>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="article-info">
+                                <div class="article-writer">Di <a href="">Gianni Rosini</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(29)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="other-articles">
+                        <div class="other-articles-content">
+                            <div class="news-info">
+                                <time>15 Apr 2025</time>
+                            </div>
+                            <div class="other-articles-header">
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac.</a>
+                                    </h2>
+                                    <div class="image-container">
+                                        <a href=""><img class= "image-75x75" src="images/news-images/75x75.jpg" alt="featured-image"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article-info">
+                                <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(8)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section blog-section">
+            <input type="checkbox" id="hide-show0" hidden>
+            <header class="section-header blog-header">
+                <div class="section-header-div">
+                    <h1 class="category-title"><a href="">Dal blog</a></h1>
+                    <img class="blog-icon" src="./images/icons/blog-icon.svg" alt="blog-icon">
+                </div>
+                <div class="hide-show-button-div">
+                    <label for="hide-show0" class="hide-show-button"><span class="hide-text">Nascondi</span><span class="show-text">Mostra</span><img src="images/icons/hide-icon.svg" alt="hide-icon" class="hide-icon"><img src="images/icons/show-icon.svg" alt="show-icon" class="show-icon"></label>
+                </div>
+            </header>
+            <div class="section-content">
+                <div class="column">
+                    <div class="other-articles">
+                        <div class="other-articles-content">
+                            <div class="other-articles-header">
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac.</a>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="article-info">
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="article-writer">
+                                    <img class="writer-avatar" src="images/writer-avatar.jpg" alt="writer-avatar">
+                                    <div class="writer-info">
+                                        <p class="writer-name">Di <a href="">Renzo Rosso</a></p>
+                                        <p class="writer-role">Idraulico insigne</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vertical-divider"></div>
+                        <div class="other-articles-content">
+                            <div class="other-articles-header">
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac.</a>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="article-info">
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="article-writer">
+                                    <img class="writer-avatar" src="images/writer-avatar.jpg" alt="writer-avatar">
+                                    <div class="writer-info">
+                                        <p class="writer-name">Di <a href="">Renzo Rosso</a></p>
+                                        <p class="writer-role">Idraulico insigne</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vertical-divider"></div>
+                        <div class="other-articles-content">
+                            <div class="other-articles-header">
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac.</a>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="article-info">
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="article-writer">
+                                    <img class="writer-avatar" src="images/writer-avatar.jpg" alt="writer-avatar">
+                                    <div class="writer-info">
+                                        <p class="writer-name">Di <a href="">Renzo Rosso</a></p>
+                                        <p class="writer-role">Idraulico insigne</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vertical-divider"></div>
+                        <div class="other-articles-content">
+                            <div class="other-articles-header">
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac.</a>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="article-info">
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="article-writer">
+                                    <img class="writer-avatar" src="images/writer-avatar.jpg" alt="writer-avatar">
+                                    <div class="writer-info">
+                                        <p class="writer-name">Di <a href="">Renzo Rosso</a></p>
+                                        <p class="writer-role">Idraulico insigne</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="blog-button-div">
+                        <button class="blog-button"><a href="">Leggi tutti i blog</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-header">
+                <div class="section-header-div">
+                    <h1 class="category-title">Crisi climatica</h1>
+                </div>
+            </div>
+            <div class="column">
+                <div class="main-article">
+                    <header class="main-article-header">
+                        <h1 class="main-article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet cursus libero quis maximus. Etiam lacinia augue a quam eleifend vulputate.</h1>
+                        <div class="article-info main-article-info">
+                            <div class="article-writer">Di <a href="">F. Q.</a></div>
+                            <div class="article-action">
+                                <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                <div class="vertical-divider"></div>
+                                <div class="comments">
+                                    <a href="">
+                                        <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                        <span>(0)</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="main-article-content">
+                        <div class="main-article-image">
+                            <a href=""><img src="/images/news-images/624x240.jpg" alt="featured-image"></a>
+                        </div>
+                        <div class="main-article-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet cursus libero quis maximus. Etiam lacinia augue a quam eleifend vulputate. Donec lobortis arcu non est mollis, vitae vestibulum nibh.</p>
+                            <a href="">Leggi articolo >></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal-divider"></div>
+                <div class="other-articles column">
+                    <div class="other-articles-content">
+                        <div class="other-articles-header">
+                            <div class="news-info">
+                                <time>15 Aprile 2025</time>
+                                <a href="">Ambiente</a>
+                            </div>
+                            <div class="other-articles-title">
+                                <h2>
+                                    <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet cursus.</a>
+                                </h2>
+                                <div class="image-container">
+                                    <a href=""><img class= "image-90x90" src="images/news-images/90x90.jpg" alt="featured-image"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-info">
+                            <div class="article-writer">Di <a href="">F. Q.</a></div>
+                            <div class="article-action">
+                                <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                <div class="vertical-divider"></div>
+                                <div class="comments">
+                                    <a href="">
+                                        <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                        <span>(0)</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section video-section">
+            <input type="checkbox" id="hide-show1" hidden>
+            <header class="section-header video-header">
+                <div class="section-header-div">
+                    <h1 class="category-title"><a href="">Video in evidenza</a></h1>
+                </div>
+                <div class="hide-show-button-div">
+                    <label for="hide-show1" class="hide-show-button"><span class="hide-text">Nascondi</span><span class="show-text">Mostra</span><img src="images/icons/hide-icon.svg" alt="hide-icon" class="hide-icon"><img src="images/icons/show-icon.svg" alt="show-icon" class="show-icon"></label>
+                </div>
+            </header>
+            <div class="section-content">
+                <div class="column">
+                    <div class="other-articles">
+                        <div class="other-articles-content">
+                            <div class="other-articles-header">
+                                <div class="news-info">
+                                    Mondo
+                                </div>
+                                <div class="image-container">
+                                    <a href="">
+                                        <img src="images/news-images/248x186.jpg" alt="featured-image">
+                                        <img class="video-icon" src="images/icons/video-icon.svg" alt="video-icon">
+                                    </a>
+                                </div>
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et sollicitudin.</a>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="article-info">
+                                <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vertical-divider"></div>
+                        <div class="other-articles-content">
+                            <div class="other-articles-header">
+                                <div class="news-info">
+                                    Mondo
+                                </div>
+                                <div class="image-container">
+                                    <a href="">
+                                        <img src="images/news-images/248x186.jpg" alt="featured-image">
+                                        <img class="video-icon" src="images/icons/video-icon.svg" alt="video-icon">
+                                    </a>
+                                </div>
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et sollicitudin.</a>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="article-info">
+                                <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vertical-divider"></div>
+                        <div class="other-articles-content">
+                            <div class="other-articles-header">
+                                <div class="news-info">
+                                    Mondo
+                                </div>
+                                <div class="image-container">
+                                    <a href="">
+                                        <img src="images/news-images/248x186.jpg" alt="featured-image">
+                                        <img class="video-icon" src="images/icons/video-icon.svg" alt="video-icon">
+                                    </a>
+                                </div>
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et sollicitudin.</a>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="article-info">
+                                <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vertical-divider"></div>
+                        <div class="other-articles-content">
+                            <div class="other-articles-header">
+                                <div class="news-info">
+                                    Mondo
+                                </div>
+                                <div class="image-container">
+                                    <a href="">
+                                        <img src="images/news-images/248x186.jpg" alt="featured-image">
+                                        <img class="video-icon" src="images/icons/video-icon.svg" alt="video-icon">
+                                    </a>
+                                </div>
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et sollicitudin.</a>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="article-info">
+                                <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <input type="checkbox" id="hide-show2" hidden>
+            <header class="section-header with-img">
+                <div class="spacer"></div>
+                <div class="image-container">
+                    <a href=""><img src="images/icons/sport-icon.svg" alt="sport-icon"></a>
+                </div>
+                <div class="hide-show-button-div">
+                    <label for="hide-show2" class="hide-show-button"><span class="hide-text">Nascondi</span><span class="show-text">Mostra</span><img src="images/icons/hide-icon.svg" alt="hide-icon" class="hide-icon"><img src="images/icons/show-icon.svg" alt="show-icon" class="show-icon"></label>
+                </div>
+            </header>
+            <div class="section-content">
+                <div class="column">
+                    <div class="row">
+                        <div class="main-article row">
+                            <header class="main-article-header">
+                                <time>15 Aprile 2025</time>
+                                <h1 class="main-article-title"><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet cursus libero quis maximus.</a></h1>
+                                <div class="main-article-text" style="width: 100%;">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet cursus libero quis maximus. Etiam lacinia augue a quam eleifend vulputate. Donec lobortis arcu non est mollis, vitae vestibulum nibh.</p>
+                                    <a href="">Leggi articolo</a>
+                                </div>
+                                <div class="article-info main-article-info-row">
+                                    <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                    <div class="article-action">
+                                        <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                        <div class="vertical-divider"></div>
+                                        <div class="comments">
+                                            <a href="">
+                                                <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                                <span>(0)</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </header>
+                            <div class="main-article-content">
+                                <div class="main-article-image">
+                                    <a href=""><img src="/images/news-images/400x400.jpg" alt="featured-image"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vertical-divider"></div>
+                        <div class="column side-articles-248px">
+                            <div class="other-articles">
+                                <div class="other-articles-content">
+                                    <div class="other-articles-header">
+                                        <div class="news-info">
+                                            <time>15 Aprile 2025</time>
+                                            <a href="">Sport</a>
+                                        </div>
+                                        <div class="other-articles-title">
+                                            <h2>
+                                                <a href="" style="font-size: 1.25rem;">Lorem ipsum dolor sit amet, consectetur adipiscing.</a>
+                                            </h2>
+                                            <div class="image-container">
+                                                <a href=""><img class= "image-75x75" src="images/news-images/75x75.jpg" alt="featured-image"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="article-info">
+                                        <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                        <div class="article-action">
+                                            <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                            <div class="vertical-divider"></div>
+                                            <div class="comments">
+                                                <a href="">
+                                                    <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                                    <span>(0)</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="horizontal-divider"></div>
+                            <div class="other-articles">
+                                <div class="other-articles-content">
+                                    <div class="other-articles-header">
+                                        <div class="news-info">
+                                            <time>15 Aprile 2025</time>
+                                            <a href="">Sport</a>
+                                        </div>
+                                        <div class="other-articles-title">
+                                            <h2>
+                                                <a href="" style="font-size: 1.25rem;"><span class="red-text in-articles-text">Ultras - </span>Lorem ipsum dolor sit amet, consectetur adipiscing.</a>
+                                            </h2>
+                                            <div class="image-container">
+                                                <a href=""><img class= "image-75x75" src="images/news-images/75x75.jpg" alt="featured-image"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="article-info">
+                                        <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                        <div class="article-action">
+                                            <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                            <div class="vertical-divider"></div>
+                                            <div class="comments">
+                                                <a href="">
+                                                    <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                                    <span>(0)</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="other-articles">
+                        <div class="other-articles-content">
+                            <div class="other-articles-header">
+                                <div class="news-info">
+                                    <time>15 Aprile 2025</time>
+                                    <a href="">Sport</a>
+                                </div>
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet cursus.</a>
+                                    </h2>
+                                    <div class="image-container">
+                                        <a href=""><img class= "image-90x90" src="images/news-images/90x90.jpg" alt="featured-image"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article-info">
+                                <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vertical-divider"></div>
+                        <div class="other-articles-content">
+                            <div class="other-articles-header">
+                                <div class="news-info">
+                                    <time>15 Aprile 2025</time>
+                                    <a href="">Sport</a>
+                                </div>
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet cursus.</a>
+                                    </h2>
+                                    <div class="image-container">
+                                        <a href=""><img class= "image-90x90" src="images/news-images/90x90.jpg" alt="featured-image"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article-info">
+                                <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vertical-divider"></div>
+                        <div class="other-articles-content">
+                            <div class="other-articles-header">
+                                <div class="news-info">
+                                    <time>15 Aprile 2025</time>
+                                    <a href="">Sport</a>
+                                </div>
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet cursus.</a>
+                                    </h2>
+                                    <div class="image-container">
+                                        <a href=""><img class= "image-90x90" src="images/news-images/90x90.jpg" alt="featured-image"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article-info">
+                                <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <input type="checkbox" id="hide-show3" hidden>
+            <header class="section-header with-img">
+                <div class="spacer"></div>
+                <div class="image-container">
+                    <a href=""><img src="images/icons/magazine-icon.svg" alt="magazine-icon"></a>
+                </div>
+                <div class="hide-show-button-div">
+                    <label for="hide-show3" class="hide-show-button"><span class="hide-text">Nascondi</span><span class="show-text">Mostra</span><img src="images/icons/hide-icon.svg" alt="hide-icon" class="hide-icon"><img src="images/icons/show-icon.svg" alt="show-icon" class="show-icon"></label>
+                </div>
+            </header>
+            <div class="section-content">
+                <div class="column">
+                    <div class="main-article row">
+                        <header class="main-article-header">
+                            <h1 class="main-article-title"><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet cursus libero quis maximus.</a></h1>
+                            <div class="main-article-text" style="width: 100%;">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet cursus libero quis maximus. Etiam lacinia augue a quam eleifend vulputate. Donec lobortis arcu non est mollis, vitae vestibulum nibh.</p>
+                                <a href="" style="color: #be21b4;">Leggi articolo</a>
+                            </div>
+                            <div class="article-info main-article-info-row">
+                                <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="main-article-content">
+                            <div class="main-article-image">
+                                <a href=""><img src="/images/news-images/401x535.jpg" alt="featured-image"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="other-articles">
+                        <div class="other-articles-content">
+                            <div class="other-articles-header">
+                                <div class="news-info">
+                                    <time>15 Aprile 2025</time>
+                                    <a href="">FQ Magazine</a>
+                                </div>
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet cursus.</a>
+                                    </h2>
+                                </div>
+                                <div class="article-info">
+                                    <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                    <div class="article-action">
+                                        <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                        <div class="vertical-divider"></div>
+                                        <div class="comments">
+                                            <a href="">
+                                                <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                                <span>(0)</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vertical-divider"></div>
+                        <div class="other-articles-content">
+                            <div class="other-articles-header">
+                                <div class="news-info">
+                                    <time>15 Aprile 2025</time>
+                                    <a href="">FQ Magazine</a>
+                                </div>
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet cursus.</a>
+                                    </h2>
+                                </div>
+                                <div class="article-info">
+                                    <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                    <div class="article-action">
+                                        <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                        <div class="vertical-divider"></div>
+                                        <div class="comments">
+                                            <a href="">
+                                                <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                                <span>(0)</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-divider"></div>
+                <div class="column side-articles-248px">
+                    <div class="other-articles">
+                        <div class="other-articles-content">
+                            <div class="other-articles-header">
+                                <a href=""><img src="images/news-images/248x186.jpg" alt="featured-image"></a>
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu commodo felis, eu tempus turpis. Etiam sodales neque non dui lacinia pretium. Nam ultricies.</a>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="article-info">
+                                <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="other-articles">
+                        <div class="other-articles-content">
+                            <div class="other-articles-header">
+                                <div class="news-info">
+                                    <time>15 Aprile 2025</time>
+                                </div>
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet cursus.</a>
+                                    </h2>
+                                    <div class="image-container">
+                                        <a href=""><img class= "image-75x75" src="images/news-images/75x75.jpg" alt="featured-image"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article-info">
+                                <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <header class="section-header">
+                <div class="section-header-div">
+                    <h1 class="category-title"><a href="">Sul Fatto Quotidiano</a></h1>
+                </div>
+            </header>
+            <div class="section-content">
+                <div class="column">
+                    <div class="main-article row">
+                        <header class="main-article-header">
+                            <div class="news-info">
+                                <button class="in-edicola" style="align-self: center">In edicola</button>
+                                <time>15 Aprile 2025</time>
+                            </div>
+                            <h1 class="main-article-title"><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h1>
+                            <div class="main-article-text" style="width: 100%;">
+                                <p><span class="red-text in-articles-text">L'analisi - </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet cursus libero quis maximus. Etiam lacinia augue a quam eleifend vulputate.</p>
+                                <a href="">Leggi articolo</a>
+                            </div>
+                            <div class="article-info main-article-info-row">
+                                <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="main-article-content">
+                            <div class="main-article-image">
+                                <a href=""><img src="/images/news-images/372x372.jpg" alt="featured-image"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="other-articles" style="width: 100%;">
+                        <div class="other-articles-content">
+                            <div class="other-articles-header">
+                                <div class="news-info">
+                                    <button class="in-edicola" style="text-decoration: none;">In edicola</button>
+                                    <time>15 Aprile 2025</time>
+                                    <a href="">Editoriale</a>
+                                </div>
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Lorem ipsum dolor sit amet.</a>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="article-info">
+                                <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vertical-divider"></div>
+                    </div>
+                </div>
+                <div class="vertical-divider"></div>
+                <div class="column">
+                    <div class="digital-newspaper">
+                        <time>martedì 15 Aprile 2025</time>
+                        <img src="images/newspaper-cover.jpg" alt="newspaper-cover">
+                        <div class="digital-newspaper-actions">
+                            <div class="download-and-browse">
+                                <a class="download" href="">Scarica PDF</a>
+                                <a class="browse" href="">Sfoglia PDF</a>
+                            </div>
+                            <a class="more-resources" href="">Consulta l'archivio</a>
+                        </div>
+                        <div class="horizontal-divider"></div>
+                        <div>
+                            <a class="podcast" href="">
+                                <img src="images/icons/podcast-icon.svg" alt="podcast-icon">
+                                <p>Ascolta il podcast<br>Del giornale di oggi</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ads-div" style="width: 300px; height: 250px;"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <header class="section-header">
+                <div class="section-header-div">
+                    <h1 class="category-title">La ministra</h1>
+                </div>
+            </header>
+            <div class="section-content">
+                <div class="column">
+                    <div class="main-article">
+                        <header class="main-article-header">
+                            <h1 class="main-article-title"><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis, nisi a aliquet mollis, quam mi.</a></h1>
+                            <div class="article-info main-article-info">
+                                <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(162)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="main-article-content">
+                            <div class="main-article-image">
+                                <a href=""><img src="/images/news-images/624x240.jpg" alt="featured-image"></a>
+                            </div>
+                            <div class="main-article-text">
+                                <p>Aenean sed risus ut nibh eleifend tincidunt a posuere orci. Donec viverra, turpis quis.</p>
+                                <a href="">Leggi articolo >></a>
+                                <div class="related-articles">
+                                    <div class="horizontal-divider in-related-articles"></div>
+                                    <p><a href=""><strong>A tutta birra - </strong>Aenean sagittis massa est, molestie pulvinar.</a></p>
+                                    <p><a href=""><strong>Cosa c'è da sapere - </strong>Suspendisse rhoncus non eros et euismod. Nullam.</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <img src="images/banner.jpg" alt="banner">
+        <section class="section">
+            <input type="checkbox" id="hide-show4" hidden>
+            <header class="section-header with-img">
+                <div class="spacer"></div>
+                <div class="image-container">
+                    <a href=""><img src="images/icons/health-icon.svg" alt="health-icon"></a>
+                </div>
+                <div class="hide-show-button-div">
+                    <label for="hide-show4" class="hide-show-button"><span class="hide-text">Nascondi</span><span class="show-text">Mostra</span><img src="images/icons/hide-icon.svg" alt="hide-icon" class="hide-icon"><img src="images/icons/show-icon.svg" alt="show-icon" class="show-icon"></label>
+                </div>
+            </header>
+            <div class="section-content">
+                <div class="column">
+                    <div class="other-articles">
+                        <div class="other-articles-content">
+                            <div class="other-articles-header">
+                                <div class="news-info">
+                                    <time>14 Aprile 2025</time>
+                                    <a href="">Salute</a>
+                                </div>
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet cursus.</a>
+                                    </h2>
+                                    <div class="image-container">
+                                        <a href=""><img class= "image-90x90" src="images/news-images/90x90.jpg" alt="featured-image"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article-info">
+                                <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vertical-divider"></div>
+                        <div class="other-articles-content">
+                            <div class="other-articles-header">
+                                <div class="news-info">
+                                    <time>14 Aprile 2025</time>
+                                    <a href="">Salute</a>
+                                </div>
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet cursus.</a>
+                                    </h2>
+                                    <div class="image-container">
+                                        <a href=""><img class= "image-90x90" src="images/news-images/90x90.jpg" alt="featured-image"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article-info">
+                                <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vertical-divider"></div>
+                        <div class="other-articles-content">
+                            <div class="other-articles-header">
+                                <div class="news-info">
+                                    <time>14 Aprile 2025</time>
+                                    <a href="">Salute</a>
+                                </div>
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet cursus.</a>
+                                    </h2>
+                                    <div class="image-container">
+                                        <a href=""><img class= "image-90x90" src="images/news-images/90x90.jpg" alt="featured-image"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article-info">
+                                <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <input type="checkbox" id="hide-show5" hidden>
+            <header class="section-header with-img">
+                <div class="spacer"></div>
+                <div class="image-container">
+                    <a href=""><img src="images/icons/millennium-icon.svg" alt="food-icon"></a>
+                </div>
+                <div class="hide-show-button-div">
+                    <label for="hide-show5" class="hide-show-button"><span class="hide-text">Nascondi</span><span class="show-text">Mostra</span><img src="images/icons/hide-icon.svg" alt="hide-icon" class="hide-icon"><img src="images/icons/show-icon.svg" alt="show-icon" class="show-icon"></label>
+                </div>
+            </header>
+            <div class="section-content">
+                <div class="column">
+                    <div class="main-article row">
+                        <header class="main-article-header">
+                            <div class="news-info">
+                                <time>11 Aprile 2025</time>
+                            </div>
+                            <h1 class="main-article-title"><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet cursus libero quis maximus.</a></h1>
+                            <div class="article-info main-article-info-row">
+                                <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="main-article-content">
+                            <div class="main-article-image">
+                                <a href=""><img src="/images/news-images/372x372.jpg" alt="featured-image"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="other-articles">
+                        <div class="other-articles-content">
+                            <div class="other-articles-header">
+                                <div class="news-info">
+                                    <time>11 Aprile 2025</time>
+                                    <a href="">L'alto e il basso</a>
+                                </div>
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet cursus.</a>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="article-info">
+                                <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vertical-divider"></div>
+                        <div class="other-articles-content">
+                            <div class="other-articles-header">
+                                <div class="news-info">
+                                    <time>11 Aprile 2025</time>
+                                    <a href="">L'alto e il basso</a>
+                                </div>
+                                <div class="other-articles-title">
+                                    <h2>
+                                        <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet cursus.</a>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="article-info">
+                                <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-divider"></div>
+                <div class="column">
+                    <div class="digital-millennium">
+                        <p class="digital-millennium-title">L'ULTIMO NUMERO - Aprile 2025<br>26 Aprile</p>
+                        <img src="images/millennium-cover.jpg" alt="millennium-cover">
+                        <a class="more-resources" href="">Leggi tutto il numero</a>
+                    </div>
+                    <div class="ads-div" style="width: 300px; height: 250px;"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <header class="section-header">
+                <div class="section-header-div">
+                    <h1 class="category-title"><a href="">La vignetta di Natangelo</a></h1>
+                </div>
+            </header>
+            <div class="section-content">
+                <div class="column">
+                    <div class="main-article">
+                        <header class="main-article-header">
+                            <h1 class="main-article-title"><a href="">Lorem ipsum dolor sit amet.</a></h1>
+                            <div class="article-info main-article-info">
+                                <div class="article-writer">Di <a href="">F. Q.</a></div>
+                                <div class="article-action">
+                                    <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                    <div class="vertical-divider"></div>
+                                    <div class="comments">
+                                        <a href="">
+                                            <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                            <span>(0)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="main-article-content">
+                            <div class="main-article-image">
+                                <a href=""><img src="/images/news-images/759x734.jpg" alt="featured-image"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-divider"></div>
+                <div class="column blog-section side-articles-248px">
+                    <div class="other-articles-content">
+                        <div class="other-articles-header">
+                            <div class="other-articles-title">
+                                <h2>
+                                    <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac.</a>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="article-info">
+                            <div class="article-action">
+                                <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                <div class="vertical-divider"></div>
+                                <div class="comments">
+                                    <a href="">
+                                        <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                        <span>(0)</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="article-writer">
+                                <img class="writer-avatar" src="images/writer-avatar.jpg" alt="writer-avatar">
+                                <div class="writer-info">
+                                    <p class="writer-name">Di <a href="">Renzo Rosso</a></p>
+                                    <p class="writer-role">Idraulico insigne</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="other-articles-content">
+                        <div class="other-articles-header">
+                            <div class="other-articles-title">
+                                <h2>
+                                    <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac.</a>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="article-info">
+                            <div class="article-action">
+                                <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                <div class="vertical-divider"></div>
+                                <div class="comments">
+                                    <a href="">
+                                        <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                        <span>(0)</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="article-writer">
+                                <img class="writer-avatar" src="images/writer-avatar.jpg" alt="writer-avatar">
+                                <div class="writer-info">
+                                    <p class="writer-name">Di <a href="">Renzo Rosso</a></p>
+                                    <p class="writer-role">Idraulico insigne</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="other-articles-content">
+                        <div class="other-articles-header">
+                            <div class="other-articles-title">
+                                <h2>
+                                    <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac.</a>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="article-info">
+                            <div class="article-action">
+                                <img src="./images/icons/share-icon.svg" alt="share-icon">
+                                <div class="vertical-divider"></div>
+                                <div class="comments">
+                                    <a href="">
+                                        <img class="comment-icon" src="./images/icons/comments-icon.svg" alt="comments-icon">
+                                        <span>(0)</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="article-writer">
+                                <img class="writer-avatar" src="images/writer-avatar.jpg" alt="writer-avatar">
+                                <div class="writer-info">
+                                    <p class="writer-name">Di <a href="">Renzo Rosso</a></p>
+                                    <p class="writer-role">Idraulico insigne</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </main>
+<footer id="footer">
+    <div class="footer-logo">
+        <a href=""><img src="images/footer-logo.svg" alt="footer-logo"></a>
+    </div>
+    <nav class="footer-nav">
+        <ul class="footer-nav-list">
+            <li><a href="">Termini e condizioni d'uso</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Cambia impostazioni privacy</a></li>
+            <li><a href="">Pubblicità</a></li>
+            <li><a href="">Abbonati</a></li>
+            <li><a href="">Newsletter</a></li>
+            <li><a href="">Gerenza e contatti</a></li>
+        </ul>
+    </nav>
+    <nav class="footer-nav">
+        <ul class="footer-nav-list">
+            <li><a href="">TV Loft</a></li>
+            <li><a href="">Scuola del Fatto</a></li>
+            <li><a href="">Fondazione FQ</a></li>
+            <li><a href="">Millennium</a></li>
+            <li><a href="">Paperfirst</a></li>
+            <li><a href="">Ioscelgo</a></li>
+            <li><a href="">Community</a></li>
+        </ul>
+    </nav>
+    <nav class="footer-nav">
+        <ul class="footer-nav-list">
+            <li><a href=""><img src="images/icons/social-icon.svg" alt="social-icon"></a></li>
+            <li><a href=""><img src="images/icons/social-icon.svg" alt="social-icon"></a></li>
+            <li><a href=""><img src="images/icons/social-icon.svg" alt="social-icon"></a></li>
+            <li><a href=""><img src="images/icons/social-icon.svg" alt="social-icon"></a></li>
+            <li><a href=""><img src="images/icons/social-icon.svg" alt="social-icon"></a></li>
+            <li><a href=""><img src="images/icons/social-icon.svg" alt="social-icon"></a></li>
+        </ul>
+    </nav>
+    <div class="copyright">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+</footer>
+<script>
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+    if (!mediaQuery.matches) {
+        const centerHeader = document.querySelector('.center-header');
+        const smallLogo = document.querySelector('.small-logo');
+
+        window.addEventListener('scroll', function () {
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+            if (scrollTop > 150) {
+                centerHeader.classList.add('hidden');
+                smallLogo.classList.remove('hidden');
+            } else {
+                centerHeader.classList.remove('hidden');
+                smallLogo.classList.add('hidden');
+            }
+        });
+    }
+</script>
 </body>
 </html>
