@@ -20,7 +20,7 @@
 }
 .section-header {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     font-family: 'Rubik', sans-serif;
     padding-top: 0.5rem;
@@ -302,8 +302,7 @@ img {
     width: 75px;
     height: 75px;
 }
-.blog-header, .video-header {
-    justify-content: space-between;
+.blog-header, .video-header, .section.with-hide-show .section-header {
     border-bottom: 1px solid #7f8589;
 }
 .section-header-div a {

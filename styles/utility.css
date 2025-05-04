@@ -72,6 +72,22 @@
 .show-text, .show-icon {
     display: none;
 }
+.other-articles-content.sponsored {
+    background-color: #e0fffc;
+    align-self: flex-start;
+    position: relative;
+}
+.sponsored-info {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    border: 1px solid black;
+    padding: 2px;
+    background-color: white;
+}
 #hide-show0:checked + .section-header .hide-show-button .show-text,
 #hide-show0:checked + .section-header .hide-show-button .show-icon,
 #hide-show1:checked + .section-header .hide-show-button .show-text,
@@ -83,7 +99,15 @@
 #hide-show4:checked + .section-header .hide-show-button .show-text,
 #hide-show4:checked + .section-header .hide-show-button .show-icon,
 #hide-show5:checked + .section-header .hide-show-button .show-text,
-#hide-show5:checked + .section-header .hide-show-button .show-icon {
+#hide-show5:checked + .section-header .hide-show-button .show-icon,
+#hide-show6:checked + .section-header .hide-show-button .show-text,
+#hide-show6:checked + .section-header .hide-show-button .show-icon,
+#hide-show7:checked + .section-header .hide-show-button .show-text,
+#hide-show7:checked + .section-header .hide-show-button .show-icon,
+#hide-show8:checked + .section-header .hide-show-button .show-text,
+#hide-show8:checked + .section-header .hide-show-button .show-icon,
+#hide-show9:checked + .section-header .hide-show-button .show-text,
+#hide-show9:checked + .section-header .hide-show-button .show-icon {
     display: inline;
 }
 #hide-show0:checked + .section-header .hide-show-button .hide-text,
@@ -103,6 +127,18 @@
 #hide-show4:checked ~ .section-content,
 #hide-show5:checked + .section-header .hide-show-button .hide-text,
 #hide-show5:checked + .section-header .hide-show-button .hide-icon,
-#hide-show5:checked ~ .section-content {
+#hide-show5:checked ~ .section-content,
+#hide-show6:checked + .section-header .hide-show-button .hide-text,
+#hide-show6:checked + .section-header .hide-show-button .hide-icon,
+#hide-show6:checked ~ .section-content,
+#hide-show7:checked + .section-header .hide-show-button .hide-text,
+#hide-show7:checked + .section-header .hide-show-button .hide-icon,
+#hide-show7:checked ~ .section-content,
+#hide-show8:checked + .section-header .hide-show-button .hide-text,
+#hide-show8:checked + .section-header .hide-show-button .hide-icon,
+#hide-show8:checked ~ .section-content,
+#hide-show9:checked + .section-header .hide-show-button .hide-text,
+#hide-show9:checked + .section-header .hide-show-button .hide-icon,
+#hide-show9:checked ~ .section-content {
     display: none;
 }

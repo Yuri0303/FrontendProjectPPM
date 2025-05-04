@@ -49,11 +49,13 @@
         display: none;
     }
     .side-articles-248px .other-articles-header a,
-    .side-articles-300px .other-articles-header a {
+    .side-articles-300px .other-articles-header a,
+    .section.with-hide-show .other-articles-header a{
         width: 100%;
     }
     .side-articles-248px .other-articles-header img,
-    .side-articles-300px .other-articles-header img {
+    .side-articles-300px .other-articles-header img,
+    .section.with-hide-show .other-articles-header img {
         width: 100%;
         height: auto;
         object-fit: cover;
