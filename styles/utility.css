@@ -142,3 +142,8 @@
 #hide-show9:checked ~ .section-content {
     display: none;
 }
+#submenu-hide-show:checked + .subheader {
+    display: flex;
+    visibility: visible;
+    height: 50px;
+}

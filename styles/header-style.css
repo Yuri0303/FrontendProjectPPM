@@ -50,7 +50,15 @@ body {
 .toggle-menu-button:hover {
     color: gray;
 }
+.small-logo {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+}
 .small-logo.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
     display: none;
 }
 .center-menu-nav {
@@ -65,6 +73,12 @@ body {
     text-decoration: none;
     font-size: 12px;
     color: #262424;
+}
+.center-menu-nav label {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 .user-menu-nav {
     display: flex;
@@ -94,6 +108,43 @@ body {
     gap: 0.5rem;
     padding: 8px;
     color: #262424;
+}
+.subheader {
+    height: 0;
+    visibility: hidden;
+    display: none;
+    gap: 1rem;
+    border-bottom: 1px solid #7f8589;
+    padding: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f0f2f5;
+    transition: height 0.3s ease;
+}
+.subheader h2 {
+    color: #262424;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    white-space: nowrap;
+    font-weight: 400;
+}
+.subheader nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.subheader nav a {
+    text-decoration: none;
+    font-size: 0.75rem;
+    color: #262424;
+    font-family: 'Rubik', sans-serif;
+    white-space: nowrap;
+    font-weight: 400;
 }
 .center-header {
     display: flex;

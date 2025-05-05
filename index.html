@@ -35,7 +35,7 @@
             <a href="">Video</a>
             <a href="">Community</a>
             <a href="">Shop</a>
-            <a href="">Il mondo FQ<img src="images/icons/arrow-icon.svg" alt="arrow-icon"></a>
+            <label for="submenu-hide-show">Il mondo FQ<img src="images/icons/arrow-icon.svg" alt="arrow-icon"></label>
         </nav>
         <nav class="user-menu-nav">
             <button class="subscribe-button">Abbonati</button>
@@ -116,6 +116,29 @@
                 </footer>
             </div>
         </div>
+    </div>
+    <input type="checkbox" id="submenu-hide-show" hidden>
+    <div class="subheader">
+        <h2>Il mondo FQ</h2>
+        <div class="vertical-divider"></div>
+        <nav>
+            <img src="images/company-logo.svg" alt="company-logo">
+            <a href="">Lorem.</a>
+            <div class="vertical-divider"></div>
+            <a href="">Lorem.</a>
+            <div class="vertical-divider"></div>
+            <a href="">Lorem.</a>
+            <div class="vertical-divider"></div>
+            <a href="">Lorem.</a>
+            <div class="vertical-divider"></div>
+            <a href="">Lorem.</a>
+            <div class="vertical-divider"></div>
+            <a href="">Lorem.</a>
+            <div class="vertical-divider"></div>
+            <a href="">Lorem.</a>
+            <div class="vertical-divider"></div>
+            <a href="">Lorem.</a>
+        </nav>
     </div>
     <div class="center-header">
         <div class="header-subscription">
@@ -2813,23 +2836,39 @@
     <div class="copyright">Lorem ipsum dolor sit amet, consectetur turpis duis.</div>
 </footer>
 <script>
-    const mediaQuery = window.matchMedia('(max-width: 768px)');
-    if (!mediaQuery.matches) {
-        const centerHeader = document.querySelector('.center-header');
-        const smallLogo = document.querySelector('.small-logo');
+    document.addEventListener('DOMContentLoaded', () => {
+        const mediaQuery = window.matchMedia('(max-width: 768px)');
+        if (!mediaQuery.matches) {
+            const centerHeader = document.querySelector('.center-header');
+            const smallLogo = document.querySelector('.small-logo');
+            const hysteresis = 5;
+            let ticking = false;
+            let lastY = window.scrollY;
+            let isScrolled = false;
 
-        window.addEventListener('scroll', function () {
-            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            window.addEventListener('scroll', function () {
+                const currentY = window.scrollY;
+                const scrollingDown = currentY > lastY;
 
-            if (scrollTop > 150) {
-                centerHeader.classList.add('hidden');
-                smallLogo.classList.remove('hidden');
-            } else {
-                centerHeader.classList.remove('hidden');
-                smallLogo.classList.add('hidden');
-            }
-        });
-    }
+                if (!ticking) {
+                    window.requestAnimationFrame(() => {
+                        if (scrollingDown && currentY > centerHeader.offsetHeight + hysteresis && !isScrolled) {
+                            centerHeader.classList.add('hidden');
+                            smallLogo.classList.remove('hidden');
+                            isScrolled = true;
+                        } else if (!scrollingDown && currentY < centerHeader.offsetHeight + hysteresis && isScrolled) {
+                            centerHeader.classList.remove('hidden');
+                            smallLogo.classList.add('hidden');
+                            isScrolled = false;
+                        }
+                        lastY = currentY;
+                        ticking =false;
+                    });
+                    ticking = true;
+                }
+            });
+        }
+    })
 </script>
 </body>
 </html>
